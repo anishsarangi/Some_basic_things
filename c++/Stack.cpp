@@ -66,11 +66,14 @@ int main()
                     cin>>q;
                     update(p,q);
                     break;
-            case 4:for(int i=0;i<=top;i++)
+            case 4:if(top!=-1)
                     {
-                        cout<<array1[i]<<endl;
+                        for(int i=0;i<=top;i++)
+                        {
+                            cout<<array1[i]<<endl;
+                        }
+                        break;
                     }
-                    break;
             default:cout<<"entered a wrong choice"<<endl;
         }
     }
